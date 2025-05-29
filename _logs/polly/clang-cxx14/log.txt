@@ -1,0 +1,306 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/rama/Ramil-caramel/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/rama/Ramil-caramel/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.28.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/rama/Ramil-caramel/workspace/projects/lab07/_builds/clang-cxx14`
+  `-GUnix Makefiles`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/rama/Ramil-caramel/workspace/projects/lab07/tools/polly/clang-cxx14.cmake`
+]
+[/home/rama/Ramil-caramel/workspace/projects/lab07]> "cmake" "-H." "-B/home/rama/Ramil-caramel/workspace/projects/lab07/_builds/clang-cxx14" "-GUnix Makefiles" "-DCMAKE_TOOLCHAIN_FILE=/home/rama/Ramil-caramel/workspace/projects/lab07/tools/polly/clang-cxx14.cmake"
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 18.1.3
+-- The CXX compiler identification is Clang 18.1.3
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/rama/projects/hunter
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 71bad34 | Config-ID: d14f46d ]
+-- [hunter] GTEST_ROOT: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Install (ver.: 1.15.2)
+-- [hunter] Building GTest
+loading initial cache file /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/cache.cmake
+loading initial cache file /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 18.1.3
+-- The CXX compiler identification is Clang 18.1.3
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Build
+[  6%] Creating directories for 'GTest-Release'
+[ 12%] Performing download step (download, verify and extract) for 'GTest-Release'
+-- verifying file...
+       file='/home/rama/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/rama/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
+-- extracting...
+     src='/home/rama/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+     dst='/home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 18%] No update step for 'GTest-Release'
+[ 25%] No patch step for 'GTest-Release'
+[ 31%] Performing configure step for 'GTest-Release'
+loading initial cache file /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/cache.cmake
+loading initial cache file /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 18.1.3
+-- The CXX compiler identification is Clang 18.1.3
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build
+[ 37%] Performing build step for 'GTest-Release'
+[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 25%] Linking CXX static library ../lib/libgtest.a
+[ 25%] Built target gtest
+[ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 62%] Linking CXX static library ../lib/libgtest_main.a
+[ 62%] Built target gtest_main
+[ 75%] Linking CXX static library ../lib/libgmock.a
+[ 75%] Built target gmock
+[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../lib/libgmock_main.a
+[100%] Built target gmock_main
+[ 43%] Performing install step for 'GTest-Release'
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-actions.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/gmock-port.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom/README.md
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/gmock-pp.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-more-actions.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-function-mocker.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-nice-strict.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-spec-builders.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-matchers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-cardinalities.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-more-matchers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/libgmock.a
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/libgmock_main.a
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/pkgconfig/gmock.pc
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/cmake/GTest/GTestTargets-release.cmake
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest_prod.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-typed-test.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-internal.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom/gtest.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom/README.md
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-port.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-string.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-matchers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-message.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-death-test.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-spi.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest_pred_impl.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-test-part.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-assertion-result.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-printers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-param-test.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/libgtest.a
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/libgtest_main.a
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/pkgconfig/gtest.pc
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
+loading initial cache file /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/args.cmake
+[ 50%] Completed 'GTest-Release'
+[ 50%] Built target GTest-Release
+[ 56%] Creating directories for 'GTest-Debug'
+[ 62%] Performing download step (download, verify and extract) for 'GTest-Debug'
+-- verifying file...
+       file='/home/rama/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/rama/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
+-- extracting...
+     src='/home/rama/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+     dst='/home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 68%] No update step for 'GTest-Debug'
+[ 75%] No patch step for 'GTest-Debug'
+[ 81%] Performing configure step for 'GTest-Debug'
+loading initial cache file /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/cache.cmake
+loading initial cache file /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 18.1.3
+-- The CXX compiler identification is Clang 18.1.3
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build
+[ 87%] Performing build step for 'GTest-Debug'
+[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 25%] Linking CXX static library ../lib/libgtestd.a
+[ 25%] Built target gtest
+[ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 62%] Linking CXX static library ../lib/libgtest_maind.a
+[ 62%] Built target gtest_main
+[ 75%] Linking CXX static library ../lib/libgmockd.a
+[ 75%] Built target gmock
+[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../lib/libgmock_maind.a
+[100%] Built target gmock_main
+[ 93%] Performing install step for 'GTest-Debug'
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-actions.h
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/gmock-port.h
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom/README.md
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/gmock-pp.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-more-actions.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-function-mocker.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-nice-strict.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-spec-builders.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-matchers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-cardinalities.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gmock/gmock-more-matchers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/libgmockd.a
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/libgmock_maind.a
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/pkgconfig/gmock.pc
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/cmake/GTest/GTestTargets-debug.cmake
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest_prod.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-typed-test.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest.h
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-internal.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
+-- Up-to-date: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom/gtest.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom/README.md
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-port.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-string.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-matchers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-message.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-death-test.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-spi.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest_pred_impl.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-test-part.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-assertion-result.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-printers.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/include/gtest/gtest-param-test.h
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/libgtestd.a
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/libgtest_maind.a
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/pkgconfig/gtest.pc
+-- Installing: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
+loading initial cache file /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest/args.cmake
+[100%] Completed 'GTest-Debug'
+[100%] Built target GTest-Debug
+-- [hunter] Build step successful (dir: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Build/GTest)
+-- [hunter] Cache saved: /home/rama/projects/hunter/_Base/Cache/raw/fdf0842d03569989629f6347ff442335088ea1ef.tar.bz2
+-- Found GTest: /home/rama/projects/hunter/_Base/xxxxxxx/71bad34/d14f46d/Install/lib/cmake/GTest/GTestConfig.cmake (found version "1.15.2")
+-- Configuring done (23.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rama/Ramil-caramel/workspace/projects/lab07/_builds/clang-cxx14
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/rama/Ramil-caramel/workspace/projects/lab07/_builds/clang-cxx14`
+  `--`
+]
+[/home/rama/Ramil-caramel/workspace/projects/lab07]> "cmake" "--build" "/home/rama/Ramil-caramel/workspace/projects/lab07/_builds/clang-cxx14" "--"
+[ 25%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
+[ 50%] Linking CXX static library libprint.a
+[ 50%] Built target print
+[ 75%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
+[100%] Linking CXX executable demo
+[100%] Built target demo
